@@ -1,0 +1,57 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+public class Pet {
+
+    // FIXME member variables here, if necessary
+
+    /**
+     * Constructor for a named Pet of a given species.
+     *
+     * @param species The name of the Pet's species.
+     * @param name The name of the Pet.
+     */
+    public Pet(String species, String name) {
+        // FIXME your code here
+    }
+
+    /**
+     * Get the species of the Pet.
+     *
+     * @return The species of the Pet.
+     */
+    public String getSpecies() {
+        // FIXME your code here
+    }
+
+    /**
+     * Get the name of the Pet.
+     *
+     * @return The name of the Pet.
+     */
+    public String getName() {
+        // FIXME your code here
+    }
+
+    /**
+     * Compare if this is equal to a different Pet.
+     *
+     * @param other The other Pet.
+     * @return True if the pet has the same species and name, false
+     * otherwise.
+     */
+    public boolean equals(Pet other) {
+        // FIXME your code here
+    }
+
+    /**
+     * Return "I love the Beach Boys!".
+     *
+     * @return The specified string.
+     */
+    public String makeSound() {
+        // FIXME your code here
+    }
+
+}

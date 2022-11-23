@@ -1,0 +1,27 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+public class Rainfall {
+
+    /**
+     * Measure the average rainfall.
+     *
+     * @param data The original rainfall data.
+     * @return The average rainfall of the period of interest.
+     */
+    public static double rainfall(int[] data) {
+        // FIXME your code here
+    }
+
+    /**
+     * A main to test rainfall()
+     *
+     * @param args Ignored command line arguments.
+     */
+    public static void main(String[] args) {
+        int[] data = {1, 5, 7, -2, 1, -999, 4};
+        System.out.println(rainfall(data));    // should print out 3.5
+    }
+
+}

@@ -1,0 +1,115 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+public class PetHotel {
+
+    // FIXME member variables here, if necessary
+
+    /**
+     * Constructor for a PetHotel with a specific number of rooms.
+     *
+     * @param numRooms The number of rooms in this hotel.
+     */
+    public PetHotel(int numRooms) {
+        // FIXME your code here
+    }
+
+    /**
+     * Get the number of unoccupied rooms in this hotel.
+     *
+     * @return The number of available rooms.
+     */
+    public int numRoomsAvailable() {
+        // FIXME your code here
+    }
+
+    /**
+     * Check in a pet to the hotel.
+     *
+     * A pet will always get the empty room with the lowest room
+     * number. This function returns true if there is an empty room
+     * for the pet, false otherwise.
+     *
+     * @param pet The pet to check in.
+     * @return True if there is a room for the pet.
+     */
+    public boolean checkIn(Pet pet) {
+        // FIXME your code here
+    }
+
+    /**
+     * Check out a pet from the hotel.
+     *
+     * The room that was occupied by this pet becomes empty. This
+     * function returns true if the pet is staying at the hotel (and
+     * so can successfully check out), and returns false otherwise.
+     *
+     * @param pet The pet to check out.
+     * @return True if the pet is currently staying at the hotel.
+     */
+    public boolean checkOut(Pet pet) {
+        // FIXME your code here
+    }
+
+    /**
+     * Get the occupant of a particular room.
+     *
+     * If an invalid roomNumber is given, this function should
+     * return null.
+     *
+     * @param roomNumber The number of the room.
+     * @return The pet occupant of the room, or null if the room
+     * is unoccupied or doesn't exist.
+     */
+    public Pet getOccupantOf(int roomNumber) {
+        // FIXME your code here
+    }
+
+    /**
+     * A main to test the PetHotel.
+     *
+     * @param args Ignored command line arguments.
+     */
+    public static void main(String[] args) {
+        PetHotel redWoofInn = new PetHotel(3);
+
+        redWoofInn.numRoomsAvailable(); // 3
+
+        Duck huey = new Duck("Huey");
+        redWoofInn.checkIn(huey); // true;
+        System.out.println(huey.makeSound()); // prints "quack!"
+
+        Duck dewey = new Duck("Dewey");
+        redWoofInn.checkIn(dewey); // true;
+        System.out.println(dewey.makeSound()); // prints "quack!"
+
+        Duck louie = new Duck("Louie");
+        redWoofInn.checkIn(louie); // true;
+        System.out.println(louie.makeSound()); // prints "quack!"
+
+        redWoofInn.numRoomsAvailable(); // 0
+
+        Goose mother = new Goose("Mother");
+        redWoofInn.checkIn(mother); // returns false;
+        System.out.println(mother.makeSound()); // prints "honk!"
+
+        redWoofInn.getOccupantOf(1).getName(); // "Dewey"
+
+        redWoofInn.checkOut(mother); // false
+        redWoofInn.checkOut(louie); // true
+
+        redWoofInn.numRoomsAvailable(); // 1
+
+        Pet edgar = new Pet("cockroach", "Edgar");
+        redWoofInn.checkIn(edgar); // true
+        System.out.println(edgar.makeSound()); // prints "I love the Beach Boys!"
+
+        redWoofInn.checkOut(huey); // true
+        redWoofInn.checkOut(dewey); // true
+
+        System.out.println("Roaches check in...");
+        System.out.println("...they don't check out.");
+    }
+
+}
